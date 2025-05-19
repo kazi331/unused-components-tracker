@@ -7,20 +7,13 @@ settings:
 importers:
 
   .:
-    dependencies:
+    devDependencies:
       '@babel/parser':
         specifier: ^7.27.2
         version: 7.27.2
       '@babel/traverse':
         specifier: ^7.27.1
         version: 7.27.1
-      glob:
-        specifier: ^11.0.2
-        version: 11.0.2
-      ts-morph:
-        specifier: ^25.0.1
-        version: 25.0.1
-    devDependencies:
       '@types/babel__traverse':
         specifier: ^7.20.7
         version: 7.20.7
@@ -54,9 +47,15 @@ importers:
       eslint:
         specifier: ^9.25.1
         version: 9.27.0
+      glob:
+        specifier: ^11.0.2
+        version: 11.0.2
       npm-run-all:
         specifier: ^4.1.5
         version: 4.1.5
+      ts-morph:
+        specifier: ^25.0.1
+        version: 25.0.1
       typescript:
         specifier: ^5.8.3
         version: 5.8.3
