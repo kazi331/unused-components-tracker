@@ -128,8 +128,8 @@ function getWebviewContent(results: AnalysisResult): string {
                 }')">${item.path || "Unknown path"}</label>
                 </div> 
                 <pre>${
-                    (item.content || "").substring(0, 200) || "No content"
-                  }...</pre>
+                  (item.content || "").substring(0, 200) || "No content"
+                }...</pre>
                 </div>`
             )
             .join("")}
@@ -154,8 +154,8 @@ function getWebviewContent(results: AnalysisResult): string {
                 }</label>
                 </div> 
                 <pre>${
-                    (item.code || "").substring(0, 200) || "No code"
-                  }...</pre>
+                  (item.code || "").substring(0, 200) || "No code"
+                }...</pre>
                 </div>`
             )
             .join("")}
@@ -180,8 +180,8 @@ function getWebviewContent(results: AnalysisResult): string {
                 }</label>
                 </div> 
                 <pre>${
-                    (item.code || "").substring(0, 200) || "No code"
-                  }...</pre>
+                  (item.code || "").substring(0, 200) || "No code"
+                }...</pre>
                 </div>`
             )
             .join("")}
@@ -194,13 +194,13 @@ function getWebviewContent(results: AnalysisResult): string {
           let backupEnabled = false;
 
           function selectAll() {
-            document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+            document.querySelectorAll('input[type="checkbox"]:not(#backupToggle)').forEach(checkbox => {
               checkbox.checked = true;
             });
           }
 
           function deselectAll() {
-            document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+            document.querySelectorAll('input[type="checkbox"]:not(#backupToggle)').forEach(checkbox => {
               checkbox.checked = false;
             });
           }
